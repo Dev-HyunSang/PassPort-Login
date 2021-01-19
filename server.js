@@ -60,7 +60,7 @@ app.post('/register', async (req, res) => {
             id: Date.now().toString(),
             name: name,
             email: email,
-            password: password
+            password: hashedPassword
         });
         res.redirect('/login');
     } catch {
